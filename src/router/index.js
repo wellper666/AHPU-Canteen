@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import index from '../views/index'
+import Login from "../views/Login";
 Vue.use(Router);
 
 const routes = [
@@ -8,8 +9,12 @@ const routes = [
         path: '/',
         name: 'index',
         component: index
+    },
+    {
+        path: '/login',
+        name: 'Login',
+        component: Login
     }
-
 ]
 const router = new Router({
     // 指定路由选中时的样式类名
